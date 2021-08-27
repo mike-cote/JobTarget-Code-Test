@@ -124,7 +124,7 @@ def best_customers():
     for row in rows:
         if row[3] in customers:
             customers[row[3]] = customers[row[3]] + (12 * int(row[9][1:])) - int(row[10][1:])
-            print("The company", + row[3] + " appeared multiple times!")
+            print("The company", row[3], " appeared multiple times!")
         else:
             customers[row[3]] = (12 * int(row[9][1:])) - int(row[10][1:])
 
